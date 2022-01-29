@@ -1,7 +1,75 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Level1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 
 [node name="Main" type="Node2D"]
 
 [node name="Level1" parent="." instance=ExtResource( 1 )]
+
+[node name="levelLabel" type="Label" parent="."]
+margin_left = 504.0
+margin_top = 41.0
+margin_right = 559.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scoreLabel" type="Label" parent="."]
+margin_left = 504.0
+margin_top = 7.5
+margin_right = 559.0
+margin_bottom = 38.5
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Score
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bonusLabel" type="Label" parent="."]
+margin_left = 504.0
+margin_top = 76.0
+margin_right = 559.0
+margin_bottom = 107.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Bonus"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="score" type="LineEdit" parent="."]
+margin_left = 547.0
+margin_top = 5.0
+margin_right = 605.0
+margin_bottom = 29.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="level" type="LineEdit" parent="."]
+margin_left = 547.0
+margin_top = 71.0
+margin_right = 605.0
+margin_bottom = 95.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bonus" type="LineEdit" parent="."]
+margin_left = 547.0
+margin_top = 36.0
+margin_right = 605.0
+margin_bottom = 60.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 90, 198 )
