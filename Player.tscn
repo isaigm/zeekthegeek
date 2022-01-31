@@ -102,11 +102,8 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-animation = "right"
-frame = 1
+animation = "left"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -0.5 )
 shape = SubResource( 5 )
-
-[node name="Tween" type="Tween" parent="."]

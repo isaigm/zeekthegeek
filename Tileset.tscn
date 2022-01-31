@@ -53,15 +53,15 @@ shape = SubResource( 3 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2( 140, -16 )
-shape = SubResource( 4 )
-
 [node name="cofre" type="Sprite" parent="StaticBody2D4"]
 position = Vector2( 785, 102 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 361, 36, 36 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( 140, -16 )
+shape = SubResource( 4 )
 
 [node name="wall4" type="Sprite" parent="."]
 position = Vector2( 140, -16 )
