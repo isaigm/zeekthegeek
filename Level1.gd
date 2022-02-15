@@ -15,6 +15,8 @@ func _ready():
 	
 	var apple = Apple.instance()
 	apple.position = get_pos(Vector2(11, 7))
+	apple.row = 7
+	apple.col = 11
 	get_node("../Player").connect("move", apple, "on_move_player")
 	add_child(apple)
 #func _process(delta):
