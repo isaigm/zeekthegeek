@@ -94,7 +94,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 17, 17.5 )
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D" type="Area2D" groups=["eatable"]]
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
